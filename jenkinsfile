@@ -1,10 +1,10 @@
 pipeline {
     agent any
-    
+
     environment {
-        SERVER_IP      = '54.242.212.21'
+        SERVER_IP      = '13.50.101.188'
         SSH_CREDENTIAL = 'node-app-key'
-        REPO_URL       = 'https://github.com/rahullengare/jenkinsfile.git'
+        REPO_URL       = 'https://github.com/iamtruptimane/node-js-app-CICD.git'
         BRANCH         = 'main'
         REMOTE_USER    = 'ubuntu'
         REMOTE_PATH    = '/home/ubuntu/node-app'
@@ -52,29 +52,3 @@ pipeline {
         }
     }
 }
-
-=======
-    stages {
-        stage('pull') {
-            steps {
-                echo 'pull done'
-            }
-        }
-        stage('build') {
-            steps {
-                echo 'build done'
-            }
-        }
-        stage('test') {
-            steps {
-                echo 'test done'
-            }
-        }
-        stage('deploy') {
-            steps {
-                echo 'deploy done'
-            }
-        }
-    }
-}
->>>>>>> 538f3a2ac9c876e45368379d956708182763fc5f
