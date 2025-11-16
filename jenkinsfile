@@ -1,7 +1,6 @@
 pipeline {
     agent any
-
-<<<<<<< HEAD
+    
     environment {
         SERVER_IP      = '54.242.212.21'
         SSH_CREDENTIAL = 'node-app-key'
