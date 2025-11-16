@@ -1,6 +1,7 @@
 pipeline {
     agent any
 
+<<<<<<< HEAD
     environment {
         SERVER_IP      = '54.242.212.21'
         SSH_CREDENTIAL = 'node-app-key'
@@ -53,3 +54,28 @@ pipeline {
     }
 }
 
+=======
+    stages {
+        stage('pull') {
+            steps {
+                echo 'pull done'
+            }
+        }
+        stage('build') {
+            steps {
+                echo 'build done'
+            }
+        }
+        stage('test') {
+            steps {
+                echo 'test done'
+            }
+        }
+        stage('deploy') {
+            steps {
+                echo 'deploy done'
+            }
+        }
+    }
+}
+>>>>>>> 538f3a2ac9c876e45368379d956708182763fc5f
